@@ -127,5 +127,91 @@ r: Ele mostra a descrição da imagem caso ela não carregue.
 
 CSS linguagem de estilo
 
+Voce cria regras de estilo pra elementos ou grupo de elementos.
+Formado por seletores Ex: imagem CSS3
+
+formado por seletores, ou um grupo de seletores (elementos html) {
+    dentro de um par de chaves nós temos as declarações
+    uma declaração é formada por uma propriedade e um valor 
+}
+
+diferenças: 
+
+html: <header id="" class="header"></header>
+html: <header class="header"></header>          usam id e class
+
+css: .header {
+    padding: 10px;
+}
+
+#header {
+    padding: 15px;           uma classe é precedida por um ponto(.) e o id por um hash
+}
+
+3º um id só pode ser usado uma vez na página 
+
+-------------------------box
+
+O navegador representa cada elemento html com uma caixa retangular e chamamos isso de box model
+
+e com o css nós conseguimos alterar a aparência dessa caixa e o box model tem 4 áreas.
+
+Margin: são os espaçamentos entre elementos 
+
+Border: circundam o padding e o conteudo è possível alterar a aparencia delas, como largura e cor.
+
+padding:espaçamento entre a borda e o conteúdo 
+
+content: é o que o bloco representa, um texto, uma imagem ou um video.
+
+-----------------------valores alterar px   padding
+
+.post {    eixo:y eixo:x
+    padding: 10px 5px;   <---valor na parte superior e inferior e depois esquerdo e direito 
+}
+ex: .post {
+    padding: 15 px 10px 5px 0px 
+}
+= 15 px para o topo, 10px para a direita, 5 para a inferior e o 0 para a parte esquerda
+
+ex:2
+propriedades específicas pra cada lado. geralmente quando o padd / margem tem 3 lados iguais e só 1 diferente
+então nós usamos o padding ou margem com 1 valor só e então usamos uma das propriedades específicas para o lado
+que a gente quer alterar.
 
 
+.post {
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 0;
+}
+
+--------------------------------------background
+
+.post {
+    background-color: green;
+    background-image: url("bg.png");
+    background-position: top;
+}
+estudo:  mdn  https://developer.mozilla.org/pt-BR/
+
+mudar cor de fundo
+
+.post {
+    background-color: green;
+    background-color: #008800; hexadecimal
+    background: #008800;
+}
+
+----------------------------border
+
+largura:pixels, centímetros, milímetros
+cor: blue, #0000ff.
+estilo: solido, pontilhada, tracejada.
+
+.post {
+    border: 3px solid blue;
+    border-top: 2px dotted green;
+    border-right: 4px dashed pink;
+}
